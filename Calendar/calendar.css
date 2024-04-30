@@ -1,0 +1,119 @@
+body {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       height: 100vh;
+       margin: 0;
+       direction: ltr;
+       background-color: #f4f4f4;
+       direction: rtl;
+       font-family: "SahelF";
+     }
+     
+     .calendar {
+       transition: all 0.3s;
+       box-sizing: content-box;
+       background-color: #fff;
+       border-radius: 15px;
+       padding: 20px;
+       width: 550px;
+       overflow: hidden;
+       direction: rtl;
+     }
+     .calendar .head {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 10px;
+     }
+     .calendar .head .title {
+       text-align: center;
+     }
+     .calendar .head .title h4 {
+       margin: 0;
+       font-size: 30px;
+     }
+     .calendar .head .title div {
+       font-family: "Sahel";
+     }
+     .calendar .head button {
+       width: 78.5714285714px;
+       height: 78.5714285714px;
+       outline: none;
+       cursor: pointer;
+       opacity: 0.6;
+       background-color: transparent;
+       border-radius: 20%;
+       border: none;
+     }
+     .calendar .head button:hover {
+       background-color: #ebebeb;
+     }
+     .calendar .head button i {
+       vertical-align: middle;
+       font-size: 40px;
+     }
+     
+     .calendar .month {
+       position: relative;
+       transition: 0.3s all;
+     }
+     .calendar .month > div {
+       transition: 0.5s all;
+       position: absolute;
+       left: 0;
+       top: 0;
+     }
+     .calendar .month > div.right {
+       opacity: 0;
+       transform: translateX(550px);
+     }
+     .calendar .month > div.left {
+       opacity: 0;
+       transform: translateX(-550px);
+     }
+     .calendar .month .days-title {
+       color: #555;
+     }
+     .calendar .month .days, .calendar .month .days-title {
+       display: flex;
+       flex-wrap: wrap;
+     }
+     .calendar .month .days > div, .calendar .month .days-title > div {
+       font-size: 22px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 78.5714285714px;
+       height: 78.5714285714px;
+       border-radius: 20%;
+     }
+     .calendar .days {
+       display: flex;
+       flex-wrap: wrap;
+     }
+     .calendar .days > div {
+       position: relative;
+       cursor: pointer;
+       box-sizing: border-box;
+       transition: 0.3s all;
+     }
+     .calendar .days > div div {
+       font-family: "Sahel";
+       font-size: 15px;
+       opacity: 0.5;
+       position: absolute;
+       left: 8px;
+       bottom: 8px;
+     }
+     .calendar .days > div:hover {
+       background-color: #ebebeb;
+     }
+     .calendar .days > div.today {
+       background-color: #ac6ae2;
+       color: #fff;
+     }
+     .calendar .days > div.disable {
+       opacity: 0.3;
+     }
