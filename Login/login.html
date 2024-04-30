@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./login.css" rel="stylesheet" >
+    <link href="./background-login.css" rel="stylesheet">
     <title>ورود</title>
 </head>
     <body>
-        <div class="main">
-            <p> بفرمایین داخل </p>
-            <form>
-                <input type="text" placeholder="کد ملی"> <br>
-                <input id="password" type="password" placeholder="رمز عبور"> 
-                <div id="show-pass-box">
-                    <input onclick="password_visibility()" type="checkbox"  id="show-pass">
-                    <p id="show-pass-text">نمایش رمز عبور</p>
-             </div>
-             <input type="submit"  id="submit" value="بررسی">
+        <div class="area" >
             
-            </form>
-        </div>
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+            
+    </div >
+    <div class="main">
+        <p> بفرمایین داخل </p>
+        <form>
+            <input type="text" placeholder="کد ملی"> <br>
+            <input id="password" type="password" placeholder="رمز عبور"> 
+            <div id="show-pass-box">
+                <input onclick="password_visibility()" type="checkbox"  id="show-pass">
+                <p id="show-pass-text">نمایش رمز عبور</p>
+         </div>
+         <input type="submit"  id="submit" value="بررسی">
+         <p id="register-text">ثبت نام</p>
+        </form>
+    </div>
+        
         <script>
             function password_visibility() {
                 var x = document.getElementById("password");
@@ -30,5 +48,6 @@
                 }
               }
         </script>
+        <script src="background.js"></script>
     </body>
 </html> 
