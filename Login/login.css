@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Sarvenaz;
+    src: url(./fonts/Digi\ Sarvenaz.ttf);
+}
+@font-face {
+    font-family: Vazir ;
+    src: url(./fonts/Vazir-Medium.ttf);
+}
+.main > p
+{
+    font-size: 30px;
+}
+.main form input
+{
+    margin-top:10px;
+    padding-right:10px;
+    font-family: Vazir;
+    border: none;
+    border-radius: 3px;
+}
+.main form>input:hover
+{
+    width:60%;
+     transition-duration: 0.5s ;
+}
+.main form>input
+{
+    width: 55%;
+    height:3vw;
+}
+
+.main
+{
+    padding-top: 1vw;;
+    direction: rtl;
+    background-color: rgba(150, 148, 147, 0.545);
+    width: 35%;
+    height: 30vw;
+    margin: 0 auto;
+    margin-top: 9%;
+    border-radius : 5px 5px 5px 5px;
+    text-align: center;
+    font-family: Sarvenaz;
+    margin-top:9vw;
+
+}
+#submit:hover{
+    background-color: rgba(137, 43, 226, 0.69);
+    color: white;
+    transition-duration: 0.4s;
+    outline-color: #ffffff;
+    outline-width: 2px;
+    outline-style: solid;
+    width:50%;
+}
+#show-pass-box{
+    margin-top:2vw;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+input
+{
+    outline: none;
+}
+
+/* input[type="checkbox"] :checked
+{
+    background-color: blueviolet;
+    border-color: blueviolet;
+} */
