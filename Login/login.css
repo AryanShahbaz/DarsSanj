@@ -61,7 +61,7 @@
     margin-top:2vw;
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 22px;
 }
 input
 {
@@ -69,5 +69,23 @@ input
 }
 #register-text{
     font-family: Sarvenaz;
-    font-size:18px;
+    font-size:22px;
+}
+
+@media only screen and (max-width:950px){
+    .main{
+        width:60%;
+        margin-left:20%;
+        height:300px;
+    }
+    #register-text{
+        font-family: Sarvenaz;
+        font-size:22px;
+    }
+    .main form>input
+    {
+        width: 70%;
+        height:35px;
+        font-size:10;
+    }
 }
