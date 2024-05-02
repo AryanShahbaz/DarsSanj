@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Sarvenaz;
+    src: url(./fonts/Digi\ Sarvenaz.ttf);
+}
+@font-face {
+    font-family: Vazir ;
+    src: url(./fonts/Vazir-Medium.ttf);
+}
+
+.main > p
+{
+    font-size: 30px;
+}
+.main form input
+{
+    margin-top:10px;
+    padding-right:10px;
+    font-family: Vazir;
+    border: none;
+    border-radius: 3px;
+}
+.main form>input:hover
+{
+    width:60%;
+     transition-duration: 0.5s ;
+}
+.main form>input
+{
+    width: 55%;
+    height:3vw;
+}
+
+.main
+{
+    padding-top: 1vw;;
+    direction: rtl;
+    background-color: rgba(150, 148, 147, 0.545);
+    width: 35%;
+    height: 33vw;
+    margin: 0 auto;
+    border-radius : 12px;
+    text-align: center;
+    font-family: Sarvenaz;
+    margin-top:9vw;
+    z-index:2;
+    position: absolute;
+    margin-left:32.5%;
+
+}
+#submit:hover{
+    background-color: rgba(137, 43, 226, 0.69);
+    color: white;
+    transition-duration: 0.4s;
+    outline-color: #ffffff;
+    outline-width: 2px;
+    outline-style: solid;
+    width:62%;
+}
+#submit{
+    width:57%;
+}
+#show-pass-box{
+    margin-top:2vw;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+input
+{
+    outline: none;
+}
+#register-text{
+    font-family: Sarvenaz;
+    font-size:22px;
+    margin-top:10px;
+}
+
+@media only screen and (max-width:1150px){
+    .main{
+        width:60%;
+        margin-left:20%;
+        height:400px;
+    }
+    .main form>input
+    {
+        width: 70%;
+        height:35px;
+        font-size:10;
+    }
+    .main form>input:hover
+    {
+        width: 75%;
+        
+    }
+    #submit{
+        width:72%;
+    }
+    #submit:hover{
+        width:77%;
+    }
+}

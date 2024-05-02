@@ -28,6 +28,7 @@
 {
     width: 55%;
     height:3vw;
+    border-radius: 12px;
 }
 
 .main
@@ -70,6 +71,7 @@ input
 #register-text{
     font-family: Sarvenaz;
     font-size:22px;
+    margin-top:10px;
 }
 
 @media only screen and (max-width:950px){

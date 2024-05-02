@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./register.css" rel="stylesheet" >
+    <link href="./background-login.css" rel="stylesheet">
+    <title>ورود</title>
+</head>
+    <body>
+        <div class="area" >
+            
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+            
+        </div >
+        <div class="main">
+            <p>ثبت نام کنید</p>
+            <form id="register-form">
+                <input type="name" required id="name" placeholder="نام و نام خانوادگی">
+                <input type="number" required id="melli" placeholder="کد ملی">
+                <input type="name" required id="school" placeholder="مدرسه">
+                <input required list="gender-list" placeholder="جنسیت" id="gender">
+                <datalist id="gender-list">
+                    <option value="پسر"></option>
+                    <option value="دختر">
+                </datalist>
+                <input type="number" required id="phone" placeholder="شماره موبایل">
+                <input type="email" required id="email" placeholder="ایمیل">
+                <br>
+                <input type="submit"  id="submit" value="ثبت نام">
+
+            </form>
+        </div>
+        
+        <script>
+            function password_visibility() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                  x.type = "text";
+                } else {
+                  x.type = "password";
+                }
+              }
+        </script>
+        <script src="background.js"></script>
+    </body>
+</html> 
